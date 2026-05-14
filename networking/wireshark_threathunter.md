@@ -4,7 +4,7 @@ You are a Security Analyst attached to the Incident Response (IR) team at Wanaop
 
 Earlier this week, the company began receiving extortion emails from an unknown threat actor claiming to have successfully exfiltrated confidential corporate documents from the internal network. The attacker is demanding a payment of 1 BTC in exchange for not leaking the allegedly stolen data publicly.
 
-Management has provided your team with a [packet capture file (.pcap)](https://github.com/DunteCityzen/Lab-Exercises/networking/wireshark_threathunter.pcap) collected during the suspected compromise window. Your task is to analyze the traffic and determine whether the attacker’s claims are legitimate.
+Management has provided your team with a [packet capture file (.pcap)](https://github.com/DunteCityzen/Lab-Exercises/blob/main/networking/wireshark_threathunter.pcap) collected during the suspected compromise window. Your task is to analyze the traffic and determine whether the attacker’s claims are legitimate.
 
 ## Your investigation should answer the following questions:
 
