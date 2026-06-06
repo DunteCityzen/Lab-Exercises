@@ -1,0 +1,46 @@
+LINUX EXERCISE
+
+1. Network Protocols
+a) What is an IP address, and what are its two main versions used today?
+b) What is a MAC address and how is it different from an IP address?
+c) What is the role of a DHCP server in a network?
+d) What is the function of DNS in a network?
+e) From the terminal:
+I. Display your system's current IP address and associated network interface(s).
+II. Show the MAC address of your primary interface.
+III. Show the current DNS servers your system is using.
+IV. View the contents of your /etc/hosts file and explain its purpose.
+V. Edit your /etc/hosts file to map 192.168.100.10 to a domain myserver.local, then test using ping.
+
+2. Basic Networking
+a) What is the difference between static IP assignment and DHCP?
+b) From the terminal:
+I. Assign a static IP 192.168.100.50/24 to your primary interface.
+II. Revert your system back to DHCP mode.
+III. Display the system’s hostname and then change it to student-linux.
+IV. After rebooting, confirm if the hostname persists.
+c) What is the purpose of the /etc/hostname file?
+d) What is the function of /etc/network/interfaces or /etc/netplan/ depending on your distro?
+e) What does the /etc/resolv.conf file do?
+
+3. Network Tools
+a) What command can be used to check connectivity to a remote server?
+b) From the terminal:
+I. Ping 8.8.8.8 and google.com – what differences do you observe?
+II. Use traceroute to track the path to google.com.
+III. Use netstat -tuln or ss -tuln to display open network ports.
+IV. Use tcpdump to capture ICMP traffic while pinging another machine.
+V. Run a whois lookup for example.com and note the registrar and expiration date.
+VI. Use the host, dig, and nslookup tools to resolve the domain openai.com. Compare their outputs.
+VII. Check if IP forwarding is enabled on your system.
+VIII. Enable IP forwarding using sysctl and verify it.
+IX. Describe a scenario where IP forwarding would be required.
+
+4. Application-Based Questions
+a) What would prevent a successful ping to a host that exists and is up? Give at least two possible reasons.
+b) Why might traceroute show hops that seem unrelated or unreachable when ping succeeds?
+c) What does netstat help you analyze when troubleshooting a network service?
+d) When would tcpdump be more useful than ping or traceroute?
+e) How can DNS misconfiguration affect system connectivity?
+f) How is /etc/hosts different from DNS? When is each used?
+
