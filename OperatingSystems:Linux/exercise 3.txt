@@ -1,0 +1,60 @@
+LINUX EXERCISE
+
+1. Hardware
+ a) What directory in the Linux filesystem stores information about system resources?
+ b) What file on the proc directory contains information about the CPU.
+review: The answer is correct. Kindly use the full path for the file for clarity.
+ c) What file on the proc directory contains information about the Memory.
+review: Kindly use the full path
+ d) What is a kernel?
+ e) What are kernel modules?
+ f) Where are kernel modules stored by default on Linux filesystems.
+ g) From the terminal:
+  I. determine what's the version of the kernel running on your system?
+  II. list the currently loaded kernel modules and from the modules, highlight two that are in use and 2 that are not in use.
+  III. show the information of the modules named above. 
+  IV. unload/remove one of the modules that are not in use.(mark this module to reload later)
+  V. get the OS name that is currently installed.
+  VI. get the architecture used by your processor(x86 or x64 or ....)
+  VII. get all the available information about the system.
+
+2. Booting
+ a) What is the default program in Linux systems that starts the Boot Process?
+ b) Which file stores the default configurations of the Linux Boot Loader?
+ c) Once a change is made to the Boot Loader's configuration settings, what command is used to update it?
+ d) What directory stores the boot loader's scripts?
+ e) What script is responsible for loading the boot loaders configuration settings?
+
+ f) What script is responsible for scanning the disk for other operating systems and add them to the boot menu?
+ g) What command can be used to view logs of your recent boot process.
+ h) What is the name of the first process that is run with the kernel?
+addition: it's called init process in older Linux systems
+ i) What does this process do when it's first started by the kernel during the boot process?
+review: You are right. But how does it do that? eg the process uses _ files located in _ to start processes that does the stuff you mentioned.
+ j) List and explain the runlevels in most Linux systems.
+ k) From your terminal, use the runlevels to reboot your machine in the default runlevel.
+ l) Now with that base, fully explain the boot process from when the power-on self test is complete.
+
+3. misc
+ a) What is an inode?
+ b) From the terminal:
+  I. list with their inodes, the contents of your HOME directory
+ c) What is a hard link?
+ d) From the terminal:
+  I. create a text file with arbitrary content in your HOME directory, then create a hardlink for it?
+  II. add another line to the file you created then print the contents of both the file and the hardlink you created and compare there inodes. What is your conclusion?
+  III. Delete the file you created on your HOME directory and list the contents with their inode numbers displayed. What happens to the inode when you delete the file you created?
+ e) What is a symbolic link?
+ f) Give advantage that symbolic links have over hardlinks that make them more commonly used?
+ g) From the terminal:
+  I. create a text file with arbitrary content in your HOME directory, then create a softlink for it?
+  II. list with their inodes the contents of your home directory and compare the inodes of the softlink with that of the file you created.
+  III. Print the contents of the softlink you created.
+  IV. delete the file you created then once again print the contents of the softlink. What is your conclusion?
+ e) What is a stream?
+ f) List the three standard streams used in Linux shells.
+ g) From the terminal:
+  I. what is your current user's UID
+  II. what is your current user's GID
+  III. Create a text file, and check the permission bits of the file. Explain what they mean?
+
