@@ -1,0 +1,76 @@
+Files:
+
+An access.log of a web application: access.log.2 file in this folder.
+
+Expected deliverables:
+- A word document well structured with the question and answer. You can add screenshots where necessary.
+- A history file from where you started the exercise. To get this, first run:
+ * history | tail -n 1 => Note down the number on the left margin. Then run:
+ * history | awk '$1 > number_above' | tee yourname_history.txt
+- This is the history file that should be zipped and sent along side the word document.
+ 
+
+1. From the terminal:
+ a) make a directory in your HOME directory called 'logs'
+ b) move into 'logs' directory
+ c) download into the 'log' directory the file at url: http://<URL>
+ d) move this file to the '/tmp' directory where you'll be working on.
+ e) Find the number of log entries in the file(lines)
+ f) Find how many IPs made requests to the web server.
+ g) Find which IP made:
+  i. the most requests
+  ii. the least requests
+  iii. requests using suspicious User-Agent strings suggesting a fuzzing attack.
+ h) List all the User-Agent strings that the suspicious IP used.
+ i) Find what time was the last request made by the IP using suspicious agent string.
+
+2. In Linux systems, what is the default directory for storing logs?
+3. From the logs stored in that directory, which one logs authentication and authorization events.
+4. Which file in the Linux system, stores information about the users on the system?
+5. Which file in the Linux filesystem stores password hashes of system users?
+6. From the terminal:
+ a) Find how many disks are currently mounted on your system
+ b) Find how many partitions each disk has.
+ c) Find the disk usage
+ d) Find the disk size in MiB of the earlier downloaded log file stored at $HOME/logs folder.
+ e) Reboot the machine and check the '/tmp' directory for your files. Are they present? Why?
+7. From the terminal:
+ a) Print the values of the PATH and HOME system environment variables on the terminal.
+ b) What benefit does the PATH variable give.
+ c) Find the common file type of the files located in the paths listed in the PATH variable.
+8. Contrast between the file types of the files located in the directories listed in the PATH variable with those files stored in /var/log and /etc/ directories.
+
+9. From the terminal:
+ a) Create 4 users: john, jane, cat, bob
+ b) Create 2 groups; male & female
+ c) Add john & bob to male group
+ d) Add jane & cat to female group
+ e) Give john the ability to run all commands as root.
+ f) Log in as jane and:
+  i. change the password
+  ii. create 2 random files in jane's home directory.
+ g) Log in as cat and:
+  i. change the password
+  ii. create 2 random files in cat's home directory.
+  iii. make file 1 only readable and writable by members of the Female group.
+ h) Log in as bob(intentionally fail the login twice) and:
+  i. change the password.
+  ii. create 2 random files.
+  iii. change the ownership of file 1 to jane.
+ i) Log in as john and:
+  i. change the password.
+  ii. create 2 random files.
+  iii. Make file one readable and writable by anyone through altering it's permissions.
+  iv. List the contents of both jane's, bob's and cat's home directory. Are you able to view the files? Why?
+  v. Now forcefully list the contents of jane's, bob's and cat's home directories. Explain why your are able to view.
+ j) Log in as jane and:
+  i. list the contents of the other users(bob,john,cat) home directories. Are you able to view the files? Why?
+  ii. Try to forcefully list the contents of their home directories the same way you did in john's session.
+  iii. Edit file 1 of the user cat adding a line saying, "jane was here!" at the bottom. Are you able to save it successfully? Why?
+  iv. Read the contents of bob's file 1 and file 2. Is it successful? Why?
+  v. Read the contents of john's file 1 and file 2. Is it successful? Why?
+
+10. From the terminal:
+ a) Analyze the authentication logs to answer the following questions:
+  i. Are there any unsuccessful login entries? If present, provide the entire log entry showing it.
+  ii. Are there any unauthorized attempts to access resources? If present, provide the entire log entry showing it.
