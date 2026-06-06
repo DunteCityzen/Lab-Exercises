@@ -1,0 +1,39 @@
+1. What is a process?
+
+2. From the terminal:
+ a) List the processes currently running on your system.
+ b) Start any process of your choice.
+ c) Suspend the process.
+ d) Resume the process.
+ e) Run a process (like mousepad) in the background
+ f) Kill the process.
+
+3. What is a service?
+
+4. From the terminal:
+ a) List current running services on the system.
+ b) Install following services(NB: Some of the services might be installed already):
+  i. apache2
+  ii. smb
+  iii. ftp
+  iv. mysql
+ c) Configure the services:
+  i. for smb, create a directory, touch some files, and create a share for that directory. While configuring the smb service, setup a user who will only be allowed to access the share(read, write, ability to browse through the contents of the share).
+  ii. for ftp, create a directory, touch some files, and configure credentials to be used, disable anonymous access.
+  iii. for mysql, configure it with credentials of your choice during setup.
+ d) Restart the services after configuration.
+ e) Stop the services.
+ f) Make smb and apache service to start automatically after reboots.
+ g) Reboot your system, and view the status of all these services: apache, MySQL, smb, ftp.
+ h) Disable auto starting of the services(smb and apache2) at reboot.
+
+5. What is a daemon.
+
+6. Give 3 examples of a daemon.
+
+7. From the terminal:
+ a) install a package using apt package manager
+ b) uninstall the installed apt package
+ c) install a package using dpkg package manager
+ d) uninstall the installed dpkg package
+ e) install balena-etcher for Linux on your system.
