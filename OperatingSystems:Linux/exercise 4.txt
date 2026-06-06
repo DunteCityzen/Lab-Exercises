@@ -1,0 +1,26 @@
+LINUX EXERCISE
+
+This exercise will focus on the logging section of the Free Linux Course
+
+a) Theoritical questions
+1. Explain syslog?(What it is & How it works)
+2. What port does it use?
+3. Name the labels included in messages sent from a syslog client to the syslog server
+4. Explain what each label describes and for each give two examples.
+5. Apart from the two labels, what else is included in the message? Now give an example of a complete syslog client message and explain what it means.
+6. What is syslogd and what does it do?
+7. Which file stores the configuration of the syslog.
+8. What is the default logging program on your Linux machine and where is it's configuration file located(kindly state the fullpath)?
+9. Which file in your system stores the logging rules configuration of rsyslog? (full path & cat it to view the rules)
+10. Assume you want to send all mail logs to a remote host, write down the entry you would put into the config file?
+11. Assume you want to send all kernel logs to the screens of every user that is logged into the system.
+
+b) Practical exercise
+Using the knowledge you have gathered on the Logging module of the free Linux course(or anyother material you've used) use the default logging service on your Linux machine to simulate client-server logging but instead of using two machines, use your localhost as the central logging server where simulated logs will be forwarded to.
+The logging service should support both TCP and UDP protocols.
+You will need to specify a rule to receive logs from a simulated logging client(You will simulate the logs using the logger commandline tool).
+These simulated logs should be stored in a directory of your choice whereby the logs will be stored in the following path format:
+{base_logs_directory(directory_of_your_choice}/{hostname_of_host_forwarding_the_logs}/{name_of_program_sending_the_logs(the facility)}/
+After generating the simulated logs, cat them to see if indeed your simulated logs have been stored appropriately.
+
+Make sure you paste the commands you use and attach screenshots showing outputs, the configuration files you modify(just capture the lines you modify) and detailed step by step explanation of the steps you used.
